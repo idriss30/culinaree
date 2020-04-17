@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+ <html> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> CULINAREE</title>
+        <meta name="description" content="discover beautiful recipes to make at home">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+         <link  href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navigation">
+                <div class="navigation__authentification">
+                    <a href="#popup" class="navigation__authentification-login">Login</a>
+                    <span class="navigation__authentification-line">/</span>
+                    <a href="#signup" class="navigation__authentification-signUp">Sign Up</a>
+                </div>
+                <div class="navigation__logo">
+                    <a href="index.html" class="logo_link"><img src="https://img.icons8.com/color/32/000000/cook-male--v1.png" class="navigation__logo-image" alt="company-logo">
+                    <span class="navigation__logo-name">CULINAREE</span></a>
+                </div>
+                <div class="navigation__social">
+                    <span class="navigation__social-text">Follow</span>
+                    <a class="navigation__link"href="https://www.facebook.com/"><img src="https://img.icons8.com/office/24/000000/facebook-new.png" class="navigation__social-facebook"></a>
+                    <a class="navigation__link"href="https://www.instagram.com"><img src="https://img.icons8.com/office/24/000000/instagram-new.png" class="navigation__social-instagram"></a>
+                    <a class="navigation__link"href ="https://www.twitter.com"><img src="https://img.icons8.com/office/24/000000/twitter.png" class="navigation__social-twitter"></a>
+                </div>
+                 <div class="navigation__search">
+                     
+                     <a class="search" href="#"><span class="navigation__search-text">Search</span>
+                     <img src="https://img.icons8.com/material-rounded/24/000000/search.png" class="navigation__search-logo"></a>
+                 </div>
+                
+            </nav>
+        </header>
+        <main class="main">
+            
+            <section class="searching">
+                <div class="utility-center">
+                    <h3 class="searching__title">Find a Recipe</h3>
+                    <form method="POST">
+                        <img src="https://img.icons8.com/material-rounded/24/000000/search.png" class="searching__logo"> 
+                        <input type="text" class="searching__input"" name="recipe-search">
+                    </form>
+                    
+                      
+                </div>
+                <div class="searching__video">
+                    <video  class="searching__content" autoplay muted loop>
+                      <source src="res/coverr-pinangat-making-1561488874936.mp4" type="video/mp4">
+                     
+                      
+                        your browser is not supported!!!
+          
+                      
+                     </video>
+                </div>
+              
+            </section>
+            <section class="random__joke">
+                <div class="random__joke-container">
+                    <img src="https://img.icons8.com/ios/50/000000/slender-man.png" alt="laughing-clown" class="random_joke-logo">
+                    <span class="random__joke-text">"Any salad can be a Caesar salad if you stab it enough."</span>
+                    <a href="#" class="random__joke-button"> Generate Joke &rAarr;</a>
+                </div>
+            </section>
+            <div class="login__popup" id="popup">
+               
+                <form action="POST" class="login__popup-form">
+                    
+                        <h3 class="login__popup-form-title">CULINAREE</h3>
+                        <a href="#" class="close-button"></a>
+                    
+                    
+                    <div  class="form__div"><input class="login__popup-input" type="email" placeholder="Email" required></div>
+                    <div class="form__div" ><input class="login__popup-input" type ="password" minlength="10" required placeholder="Password"></div>
+                    
+                    <div class="login__popup-forgot"><a href="#forgot" class="login__popup-forgot-link">forgot-password ?</a></div>
+                    <div class="button"><button type="submit" class="login__popup-form-button">Login</button></div>
+                    <p class="login__popup-form-paragraph">Don't have a login?<a class ="register__form " href="#signup">Register now</a></p>
+                     <p class="login__popup-form-paragraph">
+                         Use of this site constitutes acceptance of our <a class="terms-conditions" href="#">terms and conditions.</a></p>
+                     </p>
+                </form>
+            </div>
+            <div class="signup__popup" id="signup">
+               
+                <form action="POST" class="signup__popup-form">
+                    
+                        <h3 class="signup__popup-form-title">CULINAREE</h3>
+                        <a href="#" class="close-button"></a>
+                    
+                        <div  class="form__div"><input class="signup__popup-input" type="text" placeholder="Username" required></div>
+                    <div  class="form__div"><input class="signup__popup-input" type="email" placeholder="Email" required></div>
+                    <div class="form__div" ><input class="signup__popup-input" type ="password" minlength="10" required placeholder="Password"></div>
+                    <div class="form__div" ><input class="signup__popup-input" type ="password" minlength="10" required placeholder=" Confirm Password"></div>
+                    
+                    
+                    <div class="button"><button type="submit" class="signup__popup-form-button">Register</button></div>
+                    <p class="signup__popup-form-paragraph">have a login?<a class ="login__form " href="#popup">login now</a></p>
+                     <p class="signup__popup-form-paragraph">
+                         Use of this site constitutes acceptance of our <a class="terms-conditions" href="#">terms and conditions.</a></p>
+                     </p>
+                </form>
+            </div>
+            <div class="forgot__popup" id="forgot">
+               
+                <form action="POST" class="forgot__popup-form">
+                    
+                        <h3 class="forgot__popup-form-title">CULINAREE</h3>
+                        <a href="#" class="close-button"></a>
+                    
+                    
+                    <div  class="form__div"><input class="forgot__popup-input" type="email" placeholder="Email" required></div>
+                   
+                    
+           
+                    <div class="button"><button type="submit" class="forgot__popup-form-button">submit</button></div>
+                    <p class="forgot__popup-form-paragraph">Don't have a login?<a class ="register__form " href="#signup">Register now</a></p>
+                     <p class="forgot__popup-form-paragraph">
+                         Use of this site constitutes acceptance of our <a class="terms-conditions" href="#">terms and conditions.</a></p>
+                     </p>
+                </form>
+            </div>
+
+            <section class="emergency__guide" id="emergency">
+                <img src="res/food.jpg" alt="groceries-images" class="emergency__guide-picture">
+                <a class ="emergency__title" href="#"><h3 class="emergency__guide-title"> How to stock your kitchen for emergencies</h3></a>
+                <a href="#" class="emergency__guide-link">See complete guide &rAarr;</a>
+            </section>
+            
+            <section class="full__guide">
+                <img src="res/A-Sustainable-Pantry-04252019.jpg" alt="groceries-images" class="full__guide-image">
+                <div class="full__guide-container">
+                    <p class="full__guide-paragraph">
+                        Preparing for emergencies may not always be at the top of your to-do list, but you can start small and avoid stress down the line by assembling an emergency stockpile at home. Toilet paper, cleaning products and water are some of the obvious essentials, but it can be tough to know exactly which foods are safe to store for long periods of time.
+
+    Shop TODAY spoke to food safety experts to find out which items we should be reaching for when prepping for emergency situations.
+                    </p>
+                    <h3 class="full__guide-title">
+                        Start with the basics
+                    </h3>
+                    <p class="full__guide-paragraph">
+                        Marion Nestle, professor of nutrition, food studies and public health at New York University, suggests starting with staples like beans, rice, pasta, canned tomato sauce, tuna, crackers and canned vegetables and fruits. These goods tend to have expiration dates that do not require immediate preparation and can last several months in your pantry.
+
+    Dr. Benjamin Chapman, a professor and food safety extension specialist at North Carolina State University, adds that crackers, nut butters, granola bars, nuts, jerky, shelf-stable boxes of milk, snack puddings and nuts are also safe options to keep on hand. He also suggests produce such as oranges, apples and carrots since they won't spoil or grow pathogens with proper refrigeration.
+                    </p>
+                    <h3 class="full__guide-title">
+                        Prepare food appropriately and be careful with leftovers
+                    </h3>
+                    <p class="full__guide-paragraph">
+                        Although canned foods are an effective way to create a diverse pantry to last through emergencies, it's important to ensure that that your food is properly cooked and handled.
+
+    Dr. Darin Detwiler, a professor of food safety and policy at Northeastern University says proper preparation should still be one of your top priorities during an emergency.
+
+    "Cooking is a 'kill step' to eliminate harmful pathogens in food," Detwiler said. "Eating soups, chili and vegetables straight out of a can without actually cooking it is not the safest option."
+    He also advises against cooking too much at once, as leftovers can spoil over a long period of time.
+
+    "Cooking too much and leaving it out of the refrigerator too long can — and has — caused many problems. Rice is a major suspect as it allows bacteria to grow at a rapid rate if not refrigerated quickly and in small containers," Detwiler told TODAY.
+                    </p>
+                    <h3 class="full__guide-title">
+                        What to buy ?
+                    </h3>
+                    <p class="full__guide-paragraph">
+                        To help create your list of emergency pantry staples, we picked a few shelf-stable items that can be delivered to your doorstep.
+                    </p>
+                    <ul class="full__guide-liste">
+                        <li class="emergency__guide__liste-items"><strong>crackers</strong> are an easy option when it comes to snacking. This variety pack is available on Amazon and features two different flavors that are packed with protein.</li>
+                        <li class="emergency__guide__liste-items">Chapman listed<strong> granola bars</strong> and breakfast bars as items to keep on hand that can be enjoyed at any time</li>
+                        <li class="emergency__guide__liste-items"><strong>Nut butters</strong> are high in calories and are also a convenient source of protein.</li>
+                        <li class="emergency__guide__liste-items"><strong>Dry pasta </strong> is easy to store and cook</li>
+                        <li class="emergency__guide__liste-items">To keep up your intake of essential vitamins, <strong>fruit bowls</strong> make for an easy snack or dessert</li>
+                        <li class="emergency__guide__liste-items"><strong>Canned evaporated milk  </strong> is a great way to consume dairy and a source of vitamin D.</li>
+                        <li class="emergency__guide__liste-items"><strong>Packets of tuna  </strong> are a great source of protein and calories. Since they come in pouches, no draining is necessary.</li>
+                        <li class="emergency__guide__liste-items"><strong>Dried rice  </strong> is another shelf-stable option that can be enjoyed in a matter of minutes</li>
+                        <li class="emergency__guide__liste-items"><strong>Soups  </strong> are easy to store and usually have a long shelf life. However, Detwiler notes that many soups and beans should still be properly cooked when possible.</li>
+                        <li class="emergency__guide__liste-items"><strong>Fruits and vegetables  </strong> as a perfect shelf-stable item to stock up on.</li>
+                    
+                    </ul>
+                </div>
+                <a href="index.html" class="full__guide-back-button">back &rAarr;</a>
+
+                </div>
+            </section>
+            <div id="foursection">
+                <section class="healthy-recipes" id="healthy">
+                    <a class="recipes__anchor"  href="#" id="healthylink"><h4 class="recipes__title health"> Healthy Recipes</h4></a>
+                    
+                    <div class="row">
+                        <div class="col col-for-one-of-5">
+                               <a class="recipe__link" href ="282"><img class="recipe__images" src="https://spoonacular.com/recipeImages/282-556x370.jpg">
+                               <p class="col-text">Roasted Salmon With Spicy Cauliflower</p></a>
+                        </div>
+                        <div class="col col-for-one-of-5">
+                            <a class="recipe__link" href="341"><img class="recipe__images" src="https://spoonacular.com/recipeImages/341-556x370.jpg">
+                            <p class="col-text">Sautéed Squid Salad With Salsa Verde</p></a>
+                        </div>
+                        <div class="col col-for-one-of-5">
+                            <a class="recipe__link" href="392"><img class="recipe__images" src="https://spoonacular.com/recipeImages/392-556x370.jpg">
+                            <p class="col-text">Mediterranean Pasta with Broccoli</p></a>
+                        </div>
+                        <div class="col col-for-one-of-5">
+                            <a class="recipe__link" href="431"><img class="recipe__images" src="https://spoonacular.com/recipeImages/431-556x370.jpg">
+                            <p class="col-text">Stuffed Pizza Pie with Escarole</p></a>
+                        </div>
+                        <div class="col col-for-one-of-5">
+                            <a class="recipe__link" href="474"><img class="recipe__images" src="https://spoonacular.com/recipeImages/474-556x370.jpg">
+                            <p class="col-text">Chickpea and Pasta Soup</p></a>
+                        </div>
+                        
+                    </div>
+                </section>
+                <section class ="vegetarian__recipe" id="vegetarian">
+                    <a class="recipes__anchor" id="vegetarian" href="#"><h4 class="recipes__title vegetable"> Vegetarian Recipes</h4></a>
+                    <div class="row">
+                    
+                        <div class="col col-for-one-of-5">
+                               <a class="recipe__link" href ="723984"><img class="recipe__images" src="https://spoonacular.com/recipeImages/723984-556x370.jpg">
+                               <p class="col-text">Cabbage Salad with Peanuts</p></a>
+                        </div>
+                        <div class="col col-for-one-of-5">
+                            <a class="recipe__link" href="584549"><img class="recipe__images" src="https://spoonacular.com/recipeImages/584549-556x370.jpg">
+                            <p class="col-text">Stuffed Sweet Potato with Spinach, Hummus & Feta</p></a>
+                        </div>
+                        <div class="col col-for-one-of-5">
+                            <a class="recipe__link" href="667917"><img class="recipe__images" src="https://spoonacular.com/recipeImages/667917-556x370.jpg">
+                            <p class="col-text">Cilantro Salsa"</p></a>
+                        </div>
+                        <div class="col col-for-one-of-5">
+                            <a class="recipe__link" href="474094"><img class="recipe__images" src="https://spoonacular.com/recipeImages/474094-556x370.jpg">
+                            <p class="col-text">Skinny Hot Spinach and Artichoke Dip with Fontina Cheese</p></a>
+                        </div>
+                        <div class="col col-for-one-of-5">
+                            <a class="recipe__link" href="551377"><img class="recipe__images" src="https://spoonacular.com/recipeImages/551377-556x370.jpg">
+                            <p class="col-text">Toasted Almond Hazelnut Butter</p></a>
+                            
+                        </div>
+                        
+                    </div>
+                </section>
+                <section class="weight__loss" id="weight">
+                    <a class="recipes__anchor" id= "weight" href="#"><h4 class="recipes__title weightwatch"> weight Watchers</h4></a>
+                    
+                    <div class="row">
+                        <div class="col col-for-one-of-5">
+                               <a class="recipe__link" href ="524939"><img class="recipe__images" src="https://spoonacular.com/recipeImages/524939-556x370.jpg">
+                               <p class="col-text">Weight Watchers Beef and Broccoli</p></a>
+                        </div>
+                        <div class="col col-for-one-of-5">
+                            <a class="recipe__link" href="525111"><img class="recipe__images" src="https://spoonacular.com/recipeImages/525111-556x370.jpg">
+                            <p class="col-text">Weight Watchers Lentil and Swiss Chard Soup</p></a>
+                        </div>
+                        <div class="col col-for-one-of-5">
+                            <a class="recipe__link" href="525490"><img class="recipe__images" src="https://spoonacular.com/recipeImages/525490-556x370.jpg">
+                            <p class="col-text">Weight Watchers Pasta with Italian Chicken Sausage</p></a>
+                        </div>
+                        <div class="col col-for-one-of-5">
+                            <a class="recipe__link" href="962164"><img class="recipe__images" src="https://spoonacular.com/recipeImages/962164-556x370.jpg">
+                            <p class="col-text">Instant Pot Weight Loss Vegetable Soup</p></a>
+                        </div>
+                        <div class="col col-for-one-of-5">
+                            <a class="recipe__link" href="525776"><img class="recipe__images" src="https://spoonacular.com/recipeImages/525776-556x370.jpg">
+                            <p class="col-text">Weight Watchers Lentil Salad with Mint and Goat Cheese</p></a>
+                        </div>
+                        
+                    </div>
+    
+                </section>
+    
+                <section class="popular__now" id="popular"> 
+                    <a class="recipes__anchor" id="popul" href="
+                    #"><h4 class="recipes__title pop"> Popular now</h4></a>
+                    
+                    <div class="row">
+                        <div class="col col-for-one-of-5">
+                               <a class="recipe__link" href ="667917"><img class="recipe__images" src="https://spoonacular.com/recipeImages/667917-556x370.jpg">
+                               <p class="col-text">Cilantro Salsa</p></a>
+                        </div>
+                        <div class="col col-for-one-of-5">
+                            <a class="recipe__link" href="524579"><img class="recipe__images" src="https://spoonacular.com/recipeImages/524579-556x370.jpg">
+                            <p class="col-text">BLT Chopped Salad with Corn, Feta + Avocado</p></a>
+                        </div>
+                        <div class="col col-for-one-of-5">
+                            <a class="recipe__link" href="515885"><img class="recipe__images" src="https://spoonacular.com/recipeImages/515885-556x370.jpg">
+                            <p class="col-text">Christmas Tree Cupcakes</p></a>
+                        </div>
+                        <div class="col col-for-one-of-5">
+                            <a class="recipe__link" href="765636"><img class="recipe__images" src="https://spoonacular.com/recipeImages/765636-556x370.jpg">
+                            <p class="col-text">Southwestern Grilled Chicken with Lime Butter</p></a>
+                        </div>
+                        <div class="col col-for-one-of-5">
+                            <a class="recipe__link" href="536064"><img class="recipe__images" src="https://spoonacular.com/recipeImages/536064-556x370.jpg">
+                            <p class="col-text">Egg Salad BLTA Sandwich</p></a>
+                        </div>
+                        
+                    </div>
+    
+                </section>
+                
+            </div>
+           
+            <section class="recipe__search">
+                <div class="recipe__search-main">
+                    <form class="recipe__search-main-container">
+                        <button type ="submit"><a href="#"><img src="https://img.icons8.com/material-rounded/32/000000/search.png" class="navigation__search-logo last"></a></button>
+                        <input type="text" class="recipe__search-input" placeholder="Find a Recipe">
+                        <a class="recipe__search-close" href="#"></a> 
+
+                    </form>
+
+                </div>
+                
+            </section>
+            <section class="showing__recipe">
+                <div class="showing__Recipe-arrow">
+                    <a href="#" class="rightArrow" name ="right arrow"><span><img src="https://img.icons8.com/plasticine/60/000000/long-arrow-right.png"/></span></a>
+                    <a href="#" class= "leftArrow" name ="left arrow"><span><img src="https://img.icons8.com/plasticine/60/000000/left.png"/></span></a>
+
+                </div>
+               
+                <div class="showing__container">     
+                </div>
+                <div class="button-center">
+                    <a  href ="index.html"class = "showing__recipe-button" alt="back-to-menu">back &rarr;</a>
+                </div>
+            </section>
+            <section class ="oneRecipe">
+                <div class="oneRecipe__image">
+                  <!-- <h3 class="oneRecipe__title"> salmon with brocolee and cauliflower</h3>
+                    <img class= "recipe__img"alt="recipe-image" src= "res/food.jpg"> -->
+                </div>
+                <div class="oneRecipe__details">
+                    <!-- <span class="oneRecipe__details-score"><img src="https://img.icons8.com/plasticine/64/000000/clock.png" class="oneRecipe__details-img" alt="ready-in-minutes">Ready in 45 minutes</span>
+                    <span class="oneRecipe__details-score"><img src="https://img.icons8.com/cotton/64/000000/rating.png" class="oneRecipe__details-img" alt="culinaree-score">Culinaree Score: 75%</span>
+                    <span class="oneRecipe__details-score"><img src="https://img.icons8.com/cute-clipart/64/000000/us-dollar.png"class="oneRecipe__details-img" alt="price-serving"> $163.5 per serving</span> -->
+                </div>
+                <div class ="oneRecipe__summary">
+                    
+                    
+                </div>
+                <div class="oneRecipe__ingredients">
+                    <h4 class="oneRecipe__ingredients-title">Ingredients</h4>
+                    <ul class="oneRecipe__summary-list">
+                        <!-- <li class="oneRecipe__summary-list-item"><img src="res/Screenshot (6).png" class="summary-img"alt="ingredients-img">1 tbsp butter</li>
+                        <li class="oneRecipe__summary-list-item"><img src="res/Screenshot (6).png"class="summary-img" alt="ingredients-img">1 tbsp butter</li>
+                        <li class="oneRecipe__summary-list-item"><img src="res/Screenshot (6).png"class="summary-img" alt="ingredients-img">1 tbsp butter</li> -->
+                    </ul>
+                </div>
+                <div class="oneRecipe__equipments">
+                    <h4 class="oneRecipe__equipments-title">Equipments</h4>
+                    <!-- <span><img src ="res/avo-egg.jpg"  class="oneRecipe__equipments-image"> name goes here</span>
+                    <span><img src ="res/avo-egg.jpg" class="oneRecipe__equipments-image">  name goes here</span>
+                    <span><img src ="res/avo-egg.jpg" class="oneRecipe__equipments-image">  name goes here</span>
+                    <span><img src ="res/avo-egg.jpg" class="oneRecipe__equipments-image">  name goes here</span> -->
+                </div>
+                <div class="oneRecipe__instructions">
+                    <!-- <h4 class="oneRecipe__instructions-title">Instructions</h4>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem delectus quisquam! Quaerat porro culpa est natus iste eveniet minima labore eligendi quam. Deserunt dolore iste maiores blanditiis aliquid perferendis. -->
+                </div>
+          
+                <div class="button">
+                    <a href="index.html" class="full__guide-back-button rec">back &rAarr;</a>
+                </div>
+                
+
+            </section>
+            
+           
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                
+            <div class="footer__social__link">
+                    <div class="navigation__logo-name foot">CULINAREE</div>
+                    <a class="navigation__link"href="https://www.facebook.com/"><img src="https://img.icons8.com/office/24/000000/facebook-new.png" class="navigation__social-facebook"></a>
+                    <a class="navigation__link"href="https://www.instagram.com"><img src="https://img.icons8.com/office/24/000000/instagram-new.png" class="navigation__social-instagram"></a>
+                    <a class="navigation__link"href ="https://www.twitter.com"><img src="https://img.icons8.com/office/24/000000/twitter.png" class="navigation__social-twitter"></a>
+
+             
+            </div>
+            <div class="footer__links">
+                <h5 class="site_map">Site Map</h5>
+                <div class="links"> <a href="
+                    #healthy" class="footer__anchor">healthy recipes</a></div>
+                <div class="links"><a href="#vegetarian" class="footer__anchor">vegeterian recipes</a></div>
+                <div class="links"><a href="#popular" class="footer__anchor">popular recipes</a></div>
+                <div class="links"><a href="#emergency" class="footer__anchor">Emergency guide</a></div>
+                <div class="links"><a href="#weight" class="footer__anchor">weight loss recipes</a></div>
+
+            </div>
+            <div class="footer__text">
+                <span class="footer__text-copyright">&copy; 2020 culinaree.</span>
+                <p class="footer__text-paragraph">
+                    this website was designed as a demonstration project for my portfolio.
+                    Anything in here is just a concept to demonstrate some javascript, html and css
+                    features.
+                    This website was made possible by the spoonacular Api
+                </p>
+
+            </div>
+
+            </div>
+            
+            
+        </footer>
+        
+        
+        
+        <script src="index.js"></script>
+    </body>
+</html>
