@@ -91,9 +91,11 @@ let getJoke = async function(){
 // create a first function to display first 20 results then hide left arrow
 function looping1(){
     Dom.recipeShowing.innerHTML =""
+    console.log(recipeResult.results)
     for(var item = 0; item < 20; item++){
+    
         Dom.recipeShowing.insertAdjacentHTML("beforeend", `<div class="col-20">
-       <a class="healthy__link" href ="${recipeResult.results[item].id}"> <img class="showing__recipe-image" src="https://spoonacular.com/recipeImages/${recipeResult.results[item].imageUrls[0]}" alt="recipe-image">
+       <a class="healthy__link" href ="${recipeResult.results[item].id}"> <img class="showing__recipe-image" src="https://spoonacular.com/recipeImages/${recipeResult.results[item].image}" alt="recipe-image">
        <p>${recipeResult.results[item].title}</p></a>
        </div>`)
 }
@@ -101,6 +103,7 @@ function looping1(){
    count1=0;
    Dom.leftArrow.style.display ="none";
    Dom.rightArrow.style.display ="block"
+   
   
 }
 // create the second looping function and display left;
@@ -108,7 +111,7 @@ function looping1(){
      Dom.recipeShowing.innerHTML=""
     for(var item = 20; item < 40; item++){
         Dom.recipeShowing.insertAdjacentHTML("beforeend", `<div class="col-20">
-       <a class="healthy__link" href ="${recipeResult.results[item].id}"> <img class="showing__recipe-image" src="https://spoonacular.com/recipeImages/${recipeResult.results[item].imageUrls[0]}" alt="recipe-image">
+       <a class="healthy__link" href ="${recipeResult.results[item].id}"> <img class="showing__recipe-image" src="https://spoonacular.com/recipeImages/${recipeResult.results[item].image}" alt="recipe-image">
        <p>${recipeResult.results[item].title}</p></a>
        </div>`)
 }
@@ -123,7 +126,7 @@ function looping3(){
     Dom.recipeShowing.innerHTML=""
     for(var item = 40; item < 60; item++){
         Dom.recipeShowing.insertAdjacentHTML("beforeend", `<div class="col-20">
-       <a class="healthy__link" href ="${recipeResult.results[item].id}"> <img class="showing__recipe-image" src="https://spoonacular.com/recipeImages/${recipeResult.results[item].imageUrls[0]}" alt="recipe-image">
+       <a class="healthy__link" href ="${recipeResult.results[item].id}"> <img class="showing__recipe-image" src="https://spoonacular.com/recipeImages/${recipeResult.results[item].image}" alt="recipe-image">
        <p>${recipeResult.results[item].title}</p></a>
        </div>`)
 }
